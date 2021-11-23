@@ -1,23 +1,23 @@
- // Function returns the first item in the array
-  const tail = function(array){
-  if(array.length > 2){
+// Function returns the first item in the array
+const tail = function(array) {
+  if (array.length > 2) {
     return array.slice(1);
-  }else{
+  } else {
     return [];
   }
-  }
+};
 
 // FUNCTION IMPLEMENTATION
-const assertEqual = function (arr1, arr2) {
+const assertEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`Assertion Passed: ${arr1} === ${arr2}`)
+    console.log(`Assertion Passed: ${arr1} === ${arr2}`);
   } else {
-    console.log(`Assertion Failed: ${arr1} !== ${arr2}`)
+    console.log(`Assertion Failed: ${arr1} !== ${arr2}`);
   }
-}
+};
 
- // Find if the Two arrays are equal or not
-  const eqArrays = function(array1, array2) {
+// Find if the Two arrays are equal or not
+const eqArrays = function(array1, array2) {
   let output = true;
   if (array1.length !== array2.length) {
     return false;
@@ -32,6 +32,6 @@ const assertEqual = function (arr1, arr2) {
 
 
 
-  // TEST CODE
-  tail(["Hello","Lighthouse", "Labs"])
-  assertEqual( tail(["Hello","Lighthouse", "Labs"]), ["Lighthouse", "Labs"]); 
+// TEST CODE
+tail(["Hello","Lighthouse","Labs"]);
+assertEqual(tail(["Hello","Lighthouse","Labs"]), ["Lighthouse","Labs"]); 
