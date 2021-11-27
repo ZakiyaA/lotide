@@ -1,4 +1,4 @@
-const takeUntil = function (array, callback) {
+const takeUntil = function(array, callback) {
   const slicArray = [];
 
   for (let item of array) {
@@ -9,9 +9,9 @@ const takeUntil = function (array, callback) {
     }
   }
   return slicArray;
-}
+};
 // eqArrays implementation
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   let output = true;
   if (array1.length !== array2.length) {
     return false;
@@ -24,7 +24,7 @@ const eqArrays = function (array1, array2) {
   return output;
 };
 // FUNCTION IMPLEMENTATION
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log(`Assertion Passed: ${arr1} === ${arr2}`);
   } else {
@@ -45,4 +45,4 @@ const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
 
 //assertArraysEqual test
-assertArraysEqual(takeUntil(data2, x => x === ','), ["I've", "been", "to", "Hollywood",])
+assertArraysEqual(takeUntil(data2, x => x === ','), ["I've", "been", "to", "Hollywood"]);
