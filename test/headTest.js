@@ -1,2 +1,3 @@
 const head = require('../head');
-head([5,6,7]);
+
+console.log(head([5,6,7]));
