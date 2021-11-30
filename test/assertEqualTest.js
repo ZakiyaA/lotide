@@ -1,5 +1,10 @@
+const assert = require('chai').assert;
 const assertEqual = require('../assertEqual');
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+describe("#assertEqual", () => {
+  it("['my', 'name', 'Zakiya'], ['my', 'name', 'Zakiya']", () => {
+    assert.strictEqual(assertEqual(['my', 'name', 'name'], ['my', 'name', 'Zakiya'], true)); 
+  });
+  });
+
 
